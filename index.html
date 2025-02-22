@@ -6,18 +6,91 @@
     <link rel="stylesheet" href="main.css">
     <title>BTA</title>
 </head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f8f8;
+    }
+
+    .nav {
+        background-color: #e0e0e0;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .hero-div {
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Vertically center the content */
+        align-items: center; /* Horizontally center the content */
+        text-align: center; /* Center text */
+        height: 100vh; /* Make it full height */
+    }
+
+.hero-div h1 {
+    margin-top: 50px; /* Add some space between the image and heading */
+    font-size: 4rem;
+}
+
+.hero-div img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: -60px;
+}
+
+    .introduction-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        text-align: center;
+        padding: 0 20px;
+        background-color: #e0e0e0;
+    }
+
+
+</style>
 <body>
     <div class="nav">
         <div class="nav-links">
-            Home
-            About
-            Members
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
         </div>
     </div>
         <div class="hero-div">
-            <div class="logo-svg">
-                <img src="logo.svg" alt="">
+            <div class="logo-png">
+                <img src="capital_one.png" alt="">
+            </div>
+            <h1>Introducing Capella</h1>
+        </div>
+
+        <div class="intro-screen">
+            <div class="screen1">
+                <img src="figma1.png" alt="">
+            </div>
+            <div class="screen2">
+                <img src="figmachat.png" alt="">
             </div>
         </div>
+        <div class="explaining1">
+            <h4>The figmachat is a personal AI assistant. It will analyze your problems, and give you custom financial advice</h4>
+        </div>
+        <div class="explaining2">
+            <h4></h4>
+        </div>
+
+    <div class="introduction-div"></div>
+        
+    </div>
 </body>
 </html>
