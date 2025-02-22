@@ -58,9 +58,17 @@
         }
 
         .get-to-know {
-            border: 5px solid black;
-            max-width: 400px;
-            margin-left: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-180%, 120%);
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            max-width: 500px;
         }
 
         /* Responsive Design */
@@ -79,7 +87,7 @@
             }
         }
 
-        .scroll-section {
+        .scroll-section img{
             height: 100vh;
             background-color: #f0f0f0;
             display: flex;
@@ -101,6 +109,7 @@
         .scroll-btn:hover {
             background-color: #45a049;
         }
+        
 
     </style>
 </head>
@@ -122,13 +131,11 @@
         </div>
         <h1>Our Capital One Prompt</h1>
         <h3>"To change banking for good by bringing humanity, ingenuity, and simplicity to banking."</h3>
-        <!-- Scroll Down Button -->
-        <button class="scroll-btn" onclick="scrollToSection()">Scroll Down</button>
     </div>
 
     <!-- Scrollable Section -->
     <div id="scroll-target" class="scroll-section">
-        <h2>Welcome to the Next Section!</h2>
+        <img src="hand.JPG" alt="hand jpg">
     </div>
 
     <script>
@@ -144,6 +151,11 @@
     <div class="get-to-know">
         <h1>Learn About our<br>Software</h1>
         <h4>We will be explaining to you our project and how it works</h4>
+        <!-- Scroll Down Button -->
+        <button class="scroll-btn" onclick="scrollToSection()">Scroll Down</button>
+    </div>
+
+    <div class="app-slider">
         
     </div>
 
