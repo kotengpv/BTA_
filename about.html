@@ -5,50 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>BTA</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Navigation Bar Styling */
+        .nav {
+            background-color: #e0e0e0;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+
+        /* Intro Section Styling */
+        .intro-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Logo Styling */
+        .logo-svg img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Heading Styling */
+        .intro-div h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .intro-div h3 {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links a {
+                margin: 0 10px;
+                font-size: 14px;
+            }
+
+            .intro-div h1 {
+                font-size: 28px;
+            }
+
+            .intro-div h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .nav {
-        background-color: #b6b6b6;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .nav-links a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 18px;
-    }
-
-    .hero-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-    }
-
-    .logo-svg img {
-        width: 200px;
-    }
-    
-</style>
 <body>
+
+    <!-- Navigation Bar -->
     <nav class="nav">
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="members.html">Members</a>
             <a href="about.html">About</a>
         </div>
-    </nav>    
-    <div class="hero-div">
+    </nav>
+
+    <!-- Intro Section -->
+    <div class="intro-div">
         <div class="logo-svg">
-            <img src="capital_one.png" alt="capital one logo">
+            <img src="capital_one.png" alt="Capital One Logo">
         </div>
+        <h1>Our Capital One Prompt</h1>
+        <h3>"To change banking for good by bringing humanity, ingenuity, and simplicity to banking."</h3>
     </div>
+
 </body>
 </html>
