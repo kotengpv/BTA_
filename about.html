@@ -57,6 +57,12 @@
             color: #666;
         }
 
+        .get-to-know {
+            border: 5px solid black;
+            max-width: 400px;
+            margin-left: 30px;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links a {
@@ -72,6 +78,30 @@
                 font-size: 16px;
             }
         }
+
+        .scroll-section {
+            height: 100vh;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Button Styling */
+        .scroll-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .scroll-btn:hover {
+            background-color: #45a049;
+        }
+
     </style>
 </head>
 <body>
@@ -92,6 +122,29 @@
         </div>
         <h1>Our Capital One Prompt</h1>
         <h3>"To change banking for good by bringing humanity, ingenuity, and simplicity to banking."</h3>
+        <!-- Scroll Down Button -->
+        <button class="scroll-btn" onclick="scrollToSection()">Scroll Down</button>
+    </div>
+
+    <!-- Scrollable Section -->
+    <div id="scroll-target" class="scroll-section">
+        <h2>Welcome to the Next Section!</h2>
+    </div>
+
+    <script>
+        // Function to scroll to the section when the button is clicked
+        function scrollToSection() {
+            document.getElementById('scroll-target').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    </div>
+
+    <div class="get-to-know">
+        <h1>Learn About our<br>Software</h1>
+        <h4>We will be explaining to you our project and how it works</h4>
+        
     </div>
 
 </body>
