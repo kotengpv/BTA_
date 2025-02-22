@@ -5,92 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>BTA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(#ffa3a3, #a4d0ff, #f0f0f0);
+            background-size: 200% 200%; /* Make the gradient larger than the viewport */
+            animation: color 6s ease-in-out infinite; /* Apply the animation */
+        }
+
+@keyframes color {
+    0% {
+        background-position: 0 50%; /* Starting position */
+    }
+    50% {
+        background-position: 100% 50%; /* Midpoint position */
+    }
+    100% {
+        background-position: 0 50%; /* Ending position (same as start) */
+    }
+}
+
+        .nav {
+            background-color: #e0e0e0;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f25353;
+        }
+
+        .hero-div {
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        .hero-div h1 {
+            margin-top: 50px;
+            font-size: 4rem;
+        }
+
+        .hero-div h3 {
+            margin-top: -30px;
+            font-size: 1.75rem;
+            color: #007bff; /* Style the 'Learn More' link-like text */
+        }
+
+        .hero-div img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: -60px;
+        }
+
+        .intro-screen {
+            padding: 80px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: radial-gradient(#ffffff, #90adf7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .screen1 img, .screen2 img {
+            border-radius: 10px;
+             max-width: 300px;
+            height: auto;
+        }
+
+        .screen1 {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex; /* Align image and text horizontally */
+            align-items: center; /* Vertically center the content */
+            gap: 20px;
+        }
+
+
+
+.screen2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex; /* Align image and text horizontally */
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Space between image and text */
+}
+
+.text-content {
+    max-width: 400px; /* Adjust text width to prevent it from stretching too far */
+}
+
+.text-content2 {
+    margin-top: -70px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+}
+
+.text-content2 h1 {
+    font-size: 2.5rem;
+}
+
+.text-content h1, .text-content h3, .text-content h4 {
+    margin: 40px 0;
+}
+
+.text-content h4 {
+    font-size: 1.1rem;
+    color: #007bff; /* Style the 'Learn More' link-like text */
+    cursor: pointer;
+}
+
+.text-content2 h4 {
+    font-size: 1.1rem;
+    color: #007bff; /* Style the 'Learn More' link-like text */
+}
+
+.text-content2 h1, .text-content2 h3, .text-content2 h4 {
+    margin: 40px 0;
+}
+        
+    </style>
 </head>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: #f8f8f8;
-    }
-
-    .nav {
-        background-color: #e0e0e0;
-        padding: 15px 0;
-        text-align: center;
-    }
-
-    .nav-links a {
-        color: #333;
-        text-decoration: none;
-        margin: 0 20px;
-        font-size: 16px;
-    }
-
-    .hero-div {
-        display: flex; /* Enable flexbox */
-        flex-direction: column; /* Stack elements vertically */
-        justify-content: center; /* Vertically center the content */
-        align-items: center; /* Horizontally center the content */
-        text-align: center; /* Center text */
-        height: 100vh; /* Make it full height */
-    }
-
-.hero-div h1 {
-    margin-top: 50px; /* Add some space between the image and heading */
-    font-size: 4rem;
-}
-
-.hero-div img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin-top: -60px;
-}
-
-    .introduction-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 60vh;
-        text-align: center;
-        padding: 0 20px;
-        background-color: #e0e0e0;
-    }
-
-
-</style>
 <body>
     <div class="nav">
         <div class="nav-links">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
         </div>
     </div>
-        <div class="hero-div">
-            <div class="logo-png">
-                <img src="capital_one.png" alt="">
-            </div>
-            <h1>Introducing Capella</h1>
+    <div class="hero-div">
+        <div class="logo-png">
+            <img src="capital_one.png" alt="">
         </div>
+        <h1>Introducing Capella</h1>
+        <h3>Scroll down to learn more</h3>
+    </div>
 
-        <div class="intro-screen">
-            <div class="screen1">
-                <img src="figma1.png" alt="">
+    <div class="intro-screen">
+        <div class="screen1">
+            <img src="figma1.png" alt="">
+            <div class="text-content2">
+                <h1>Capella Feature</h1>
+                <h3>Another powerful feature of Capella is its ability to send real-time alerts when an issue arises—whether it's an overspending concern or another financial challenge.</h3>
+                <h4>Learn More</h4>
             </div>
-            <div class="screen2">
-                <img src="figmachat.png" alt="">
+        </div>
+        <div class="screen2">
+            <img src="figmachat.png" alt="">
+            <div class="text-content">
+                <h1>What is FigmaChat</h1>
+                <h3>FigmaChat is your personal AI assistant, designed to analyze your financial concerns and provide customized advice. Whether you're facing financial challenges or just need guidance, FigmaChat is here to help.</h3>
+                <h4>Learn More</h4>
             </div>
         </div>
-        <div class="explaining1">
-            <h4>The figmachat is a personal AI assistant. It will analyze your problems, and give you custom financial advice</h4>
-        </div>
-        <div class="explaining2">
-            <h4></h4>
-        </div>
-
-    <div class="introduction-div"></div>
         
     </div>
+    
 </body>
 </html>
