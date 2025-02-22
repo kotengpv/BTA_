@@ -9,7 +9,7 @@
         /* General Body Styling */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Helvetica, sans-serif;
             background: radial-gradient(#ffa3f1, #a4d0ff, #f0f0f0);
             background-size: 200% 200%; /* Make the gradient larger than the viewport */
             animation: color 6s ease-in-out infinite; /* Apply the animation */
@@ -136,6 +136,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: transform 0.2s ease;
         }
 
     .prompt-box {
@@ -149,6 +150,7 @@
         justify-content: center; /* Vertically center the content */
         align-items: center; /* Horizontally center the content */
         text-align: center; /* Ensure text is centered inside the box */
+        transition: transform 0.2s ease;
     }
 
     .prompt-box h1 {
@@ -241,6 +243,7 @@
         width: 1000px;
         padding: 20px;
         background-color: white;
+        transition: transform 0.2s ease;
     }
 
     .prompt-container2 {
@@ -301,6 +304,43 @@
         margin-top: -10px;
         color: #007bff; /* Style the 'Learn More' link-like text */
     }
+
+    .point-bullet1:hover {
+        transform: translateY(5px);
+    }
+
+    .point-bullet2:hover {
+        transform: translateY(5px);
+    }
+
+    .point-bullet3:hover {
+        transform: translateY(5px);
+    }
+
+    .point-bullet1 {
+        transition: transform 0.2s ease;
+    }
+
+    .point-bullet2 {
+        transition: transform 0.2s ease;
+    }
+
+    .point-bullet3 {
+        transition: transform 0.2s ease;
+    }
+
+    .prompt-box:hover {
+        transform: translateY(5px);
+    }
+
+    .prompt-container {
+        transform: translateY(5px);
+    }
+
+    .why-we-chose:hover {
+        transform: translateY(5px);
+    }
+
 
 
     </style>
@@ -400,8 +440,6 @@
             <a href="index.html">Home</a>
         </div>
     </div>
-
-
 
 </body>
 </html>
