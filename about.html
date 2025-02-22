@@ -111,22 +111,34 @@
         }
 
         .prompt-container {
-            height: 70vh;
+            height: 120vh;
             background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .prompt-box {
-            width: 500px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-left: -50%;
-        }
-        
+    .prompt-box {
+        width: 1000px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Vertically center the content */
+        align-items: center; /* Horizontally center the content */
+        text-align: center; /* Ensure text is centered inside the box */
+    }
+
+    .prompt-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .prompt-box h3 {
+        font-size: 1.5rem;
+    }
+
     </style>
 </head>
 <body>
