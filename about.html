@@ -111,7 +111,7 @@
         }
 
         .prompt-container {
-            height: 120vh;
+            height: 100vh;
             background-color: #f0f0f0;
             display: flex;
             justify-content: center;
@@ -137,6 +137,40 @@
 
     .prompt-box h3 {
         font-size: 1.5rem;
+        line-height: 1.4; /* Adjust the line height */
+    }
+
+    .main-points {
+        height: 100vh;
+        background: radial-gradient(#6782ee, #336af6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .point-bullet1 {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #f0f0f0;
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .point-bullet2 {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #f0f0f0;
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+    }
+
+    .point-bullet3 {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #f0f0f0;
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
     }
 
     </style>
@@ -169,7 +203,7 @@
     <script>
         // Function to scroll to the section when the button is clicked
         function scrollToSection() {
-            document.getElementById('scroll-target').scrollIntoView({
+            document.getElementById('prompt-container').scrollIntoView({
                 behavior: 'smooth'
             });
         }
@@ -179,8 +213,6 @@
     <div class="get-to-know">
         <h1>Learn About our<br>Software</h1>
         <h4>We will be explaining to you our project and how it works</h4>
-        <!-- Scroll Down Button -->
-        <button class="scroll-btn" onclick="scrollToSection()">Scroll Down</button>
     </div>
 
     <!-- Prompt Section -->
@@ -196,6 +228,12 @@
                 tutors for underserved communities? Prioritize ethics, inclusivity, and scalability to 
                 prove that innovation and social good can go hand in hand.” </h3>
         </div>
+    </div>
+
+    <div class="main-points">
+        <div class="point-bullet1"></div>
+        <div class="point-bullet2"></div>
+        <div class="point-bullet3"></div>
     </div>
 
 </body>
