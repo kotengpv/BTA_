@@ -27,7 +27,7 @@
 }
 
         .nav {
-            background-color: #e0e0e0;
+            background-color: #ffffff;
             padding: 15px 0;
             text-align: center;
         }
@@ -84,7 +84,19 @@
         .screen1 img, .screen2 img {
             border-radius: 10px;
              max-width: 300px;
-            height: auto;
+             height: auto;
+        }
+
+        .screen1, .screen2 {
+            transition: transform 0.2s ease;
+        }
+
+        .screen1:hover {
+            transform: translateY(5px);
+        }
+
+        .screen2:hover {
+            transform: translateY(5px);
         }
 
         .screen1 {
@@ -96,8 +108,6 @@
             align-items: center; /* Vertically center the content */
             gap: 20px;
         }
-
-
 
 .screen2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

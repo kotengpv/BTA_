@@ -10,12 +10,26 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
+            background: radial-gradient(#ffa3f1, #a4d0ff, #f0f0f0);
+            background-size: 200% 200%; /* Make the gradient larger than the viewport */
+            animation: color 6s ease-in-out infinite; /* Apply the animation */
         }
+
+@keyframes color {
+    0% {
+        background-position: 0 50%; /* Starting position */
+    }
+    50% {
+        background-position: 100% 50%; /* Midpoint position */
+    }
+    100% {
+        background-position: 0 50%; /* Ending position (same as start) */
+    }
+}
 
         /* Navigation Bar Styling */
         .nav {
-            background-color: #e0e0e0;
+            background-color: #ffffff;
             padding: 15px 0;
             text-align: center;
         }
@@ -53,13 +67,14 @@
 
         /* Heading Styling */
         .intro-div h1 {
-            font-size: 36px;
+            font-size: 50px;
             margin-bottom: 10px;
+            color: white;
         }
 
         .intro-div h3 {
-            font-size: 18px;
-            color: #666;
+            font-size: 24px;
+            color: #ffffff;
         }
 
         .get-to-know {
@@ -280,6 +295,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .ending h3 {
+        margin-top: -10px;
+        color: #007bff; /* Style the 'Learn More' link-like text */
     }
 
 
